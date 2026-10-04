@@ -18,13 +18,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-# Setup MLflow Tracking ke DagsHub
-import dagshub
-dagshub.init(
-    repo_owner='fathorrosi1',
-    repo_name='Eksperimen_SML_Mohammad_Fathorrosi',
-    mlflow=True
-)
+# Setup MLflow Tracking ke LOKAL
+mlflow.set_tracking_uri("http://127.0.0.1:5000/")
+mlflow.set_experiment("Telco_Churn_Basic")
 
 # Load Data
 DATA_PATH = 'namadataset_preprocessing/telco_churn_preprocessing.csv'
