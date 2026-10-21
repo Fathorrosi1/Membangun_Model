@@ -350,19 +350,3 @@ with mlflow.start_run(run_name="RandomForest_Tuned"):
     print(f"Test F1: {f1:.4f}")
 
 print("\nSemua eksperimen selesai. Periksa DagsHub.")
-
-import sys
-import sklearn
-import pandas
-import numpy
-import mlflow
-import matplotlib
-import seaborn
-
-print("Python      :", sys.version)
-print("scikit-learn:", sklearn.__version__)
-print("pandas      :", pandas.__version__)
-print("numpy       :", numpy.__version__)
-print("mlflow      :", mlflow.__version__)
-print("matplotlib  :", matplotlib.__version__)
-print("seaborn     :", seaborn.__version__)
